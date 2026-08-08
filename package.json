@@ -1,0 +1,27 @@
+{
+  "name": "eve-discord-bug-repro",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#*": "./agent/*"
+  },
+  "scripts": {
+    "build": "eve build",
+    "dev": "eve dev",
+    "start": "eve start",
+    "typecheck": "tsc",
+    "register-command": "node --env-file=.env register-command.mjs"
+  },
+  "dependencies": {
+    "ai": "7.0.38",
+    "eve": "0.31.3"
+  },
+  "devDependencies": {
+    "@types/node": "24.x",
+    "typescript": "7.0.2"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
